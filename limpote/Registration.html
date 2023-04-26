@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            background: #eaeaea;
+            background-color: #C1CBCC;
+            padding: 40px;
+            border: 1px solid;
+            max-width: 500px;
+            margin: auto;
+
+        }
+        fieldset {
+            background: rgb(254, 252, 252);
+            margin-bottom: 24px;
+            padding: 40px;
+        }
+        .box {
+            display: flex;
+        }
+        label {
+            
+                display: block;
+                text-transform: uppercase;
+                border-left: 0px solid #8c8488;
+                color: rgb(98, 86, 86);
+                /* font-weight: bold; */
+                padding-left: 3px;
+                margin-bottom: 13px;
+                /* margin: -1px; */
+            
+        }
+        .chek {
+            display: flex;
+            padding: 8px;
+            margin: -5px;
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal info</legend>
+            
+                
+            
+            <div>
+                <img src="person.jpg" height="100px" alt="upload your img">
+                <label for="name">First</label>
+                <input type="text" id="name" required autocomplete="additional-name" />
+                <label for="name">Last</label>
+                <input type="text" id="name" required autocomplete="additional-name" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" required >
+            </div>
+            <div>
+                <label for="number">Contact</label>
+                <input type="tel" name="" id="number" disabled>
+            </div>
+            <div>
+                <label for="number">Age</label>
+                <input type="range" min="20" max="40" value="2" step="1" >
+                
+            </div>
+            
+            
+            <div>
+                <label for="number">State</label>
+                <input type="text" name="" id="name" disabled>
+            </div>
+            <div>
+                <label for="text">Country</label>
+                <input type="text" name="" id="name" disabled>
+            </div>
+            <div>
+                <label for="text">tag</label>
+                <input type="text" name="" id="name"></div>
+            </div>
+            <div class="chek">
+                <label> Cricket</label>
+  <input type="checkbox" id=" Cricket" name=" Cricket" value=" Cricket">
+    <label> Footboll</label>
+  <input type="checkbox" id="Football" name="Football" value="Football">
+    <label>HOCKEY</label>
+  <input type="checkbox" id="hockey" name="hockey">
+        </div>
+        <div class="box">
+            <input type="checkbox"><p>Subscribe to newletters</p>
+
+        </div>
+        <input class="inline"  type="button" value="cancel">
+        <input class="inline"  type="submit" value="SEND">
+       
+        
+        </fieldset>
+    </form>
+</body>
+</html>
